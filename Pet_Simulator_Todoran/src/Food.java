@@ -2,29 +2,28 @@ public class Food {
 
     // variables
     public String food_Name;
-    public int pet_Height;
-    public int pet_Weight;
+    public int food_Heal;
+    private int food_Quantity;
     private int food_Price;
-    private int pet_Water;
-    private int pet_Food;
+    private int food_ExpireDays;
 
     // constructor
-    public Pet(String proprietar, String locatie, int area, int sold) {
-        this.pet_Name = pet_Name;
-        this.pet_Height = pet_Height;
-        this.pet_Weight = pet_Weight;
-        this.pet_Wealth = pet_Wealth;
-        this.pet_Water = pet_Water;
-        this.pet_Food = pet_Food;
+    public Food (String food_Name, int food_Heal, int food_Quantity, int food_Price, int food_ExpireDays ) {
+        this.food_Name = food_Name;
+        this.food_Heal = food_Heal;
+        this.food_Quantity = food_Quantity;
+        this.food_Price = food_Price;
+        this.food_ExpireDays = food_ExpireDays;
+
     }
 
     // get / set
-    public void setPet_Wealth (int Wealth) {this.pet_Wealth = Wealth; };
-    public void setPet_Water (int Water) {this.pet_Water = Water; };
-    public void setPet_Food (int Food) {this.pet_Food = Food; };
+    public void setfood_Quantity (int Quantity) {this.food_Quantity = Quantity; };
+    public void setfood_Price (int Price) {this.food_Price = Price; };
+    public void setfood_ExpireDays (int ExpireDays) {this.food_ExpireDays = ExpireDays; };
 
-    public int getPet_Wealth () {return this.pet_Wealth; };
-    public int getPet_Water () {return this.pet_Water; };
-    public int getPet_Foodr () {return this.pet_Food; };
+    public int getfood_Quantity () {return this.food_Quantity; };
+    public int getfood_Price () {return this.food_Price; };
+    public int getfood_ExpireDays () {return this.food_ExpireDays; };
 
 }

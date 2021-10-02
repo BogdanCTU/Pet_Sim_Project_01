@@ -205,12 +205,13 @@ public class Main {
 
             //simulator
             while(!game_Over){
-                //clearScreen();
-                //System.out.print("\033[H\033[2J");
-                //System.out.flush();
-                //getConsoleView().clear();
-                //console.clear();
-                //verify(consoleView).clear();
+                /*
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
+                getConsoleView().clear();
+                console.clear();
+                verify(consoleView).clear();
+                */
                 System.out.println("----------------------------------------------------------");
                 System.out.println("Day nr'" + day);
                 System.out.print("Start simulating");

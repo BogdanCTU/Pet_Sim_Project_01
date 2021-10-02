@@ -119,7 +119,7 @@ public class Main {
                                 drinks[answer_Water_nr].setfood_Quantity(drinks[answer_Water_nr].getfood_Quantity() + 1);
                                 money -= drinks[answer_Water_nr].getfood_Price();
                                 my_Pets[i].setPet_Water(my_Pets[i].getPet_Water() + drinks[answer_Water_nr].food_Heal);
-                                System.out.println(my_Pets[i].pet_Name + "just drinked some " + drinks[answer_Water_nr].food_Name);
+                                System.out.println(my_Pets[i].pet_Name + " just drinked some " + drinks[answer_Water_nr].food_Name);
                             }
                         }
                     }
@@ -140,7 +140,7 @@ public class Main {
                                 foods[answer_food_nr].setfood_Quantity(foods[answer_food_nr].getfood_Quantity() + 1);
                                 money -= foods[answer_food_nr].getfood_Price();
                                 my_Pets[i].setPet_Water(my_Pets[i].getPet_Water() + foods[answer_food_nr].food_Heal);
-                                System.out.println(my_Pets[i].pet_Name + "just eated some " + foods[answer_food_nr].food_Name);
+                                System.out.println(my_Pets[i].pet_Name + " just eated some " + foods[answer_food_nr].food_Name);
                             }
                         }
                     }
@@ -241,7 +241,7 @@ public class Main {
                                 drinks[temp].setfood_Quantity(drinks[temp].getfood_Quantity() + 1);
                                 money -= drinks[temp].getfood_Price();
                                 my_Pets[i].setPet_Water(my_Pets[i].getPet_Water() + drinks[temp].food_Heal);
-                                System.out.println(my_Pets[i].pet_Name + "just drinked some " + drinks[temp].food_Name);
+                                System.out.println(my_Pets[i].pet_Name + " just drinked some " + drinks[temp].food_Name);
                             }
                         }
                     }
@@ -255,7 +255,7 @@ public class Main {
                                 foods[temp].setfood_Quantity(drinks[temp].getfood_Quantity() + 1);
                                 money -= foods[temp].getfood_Price();
                                 my_Pets[i].setPet_Food(my_Pets[i].getPet_Food() + foods[temp].food_Heal);
-                                System.out.println(my_Pets[i].pet_Name + "just eated some " + foods[temp].food_Name);
+                                System.out.println(my_Pets[i].pet_Name + " just eated some " + foods[temp].food_Name);
                             }
                         }
                     }
@@ -278,15 +278,16 @@ public class Main {
 
                 System.out.println("You have " + money + " money left!");
                 day++;
+                temp_Day++;
                 if(temp_Day == 7){
                     temp_Day = 1;
-                    money += 100;
+                    money += rnd.nextInt(100);
                 }
             }
         }
 
         System.out.println("----------------------------------------------------------");
-        System.out.println("Your pets survived " + day + " days!");
+        System.out.println("Your pets survived " + (day - 1) + " days!");
 
         String lost[] = {"Y","o","u"," ","l","o","s","t","!"};
         for(int i = 0; i < 9; ++i) {

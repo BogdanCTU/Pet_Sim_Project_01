@@ -111,7 +111,7 @@ public class Main {
                             String answer_Water;
                             System.out.print("Would you like to buy " + my_Pets[i].pet_Name + " some water? (yes / no) - ");
                             answer_Water = sc.next();
-                            if ((Objects.equals(insert_Data, "yes") == true)) {
+                            if ((Objects.equals(answer_Water, "yes"))) {
                                 int answer_Water_nr;
                                 System.out.print("You can buy : \n 1 - Water \n 2 - Milk \n Wich one would you like to buy? ( 1 / 2 ) - ");
                                 answer_Water_nr = sc.nextInt();
@@ -129,10 +129,10 @@ public class Main {
                         System.out.println(my_Pets[i].pet_Name + " is hungry!!!");
                     if (my_Pets[i].getPet_Food() <= 50) {
                         if (money >= 0) {
-                            String answer_Water;
+                            String answer_Food;
                             System.out.print("Would you like to buy " + my_Pets[i].pet_Name + " some food? (yes / no) - ");
-                            answer_Water = sc.next();
-                            if ((Objects.equals(insert_Data, "yes") == true)) {
+                            answer_Food = sc.next();
+                            if ((Objects.equals(answer_Food, "yes"))) {
                                 int answer_food_nr;
                                 System.out.print("You can buy : \n 1 - Meal \n 2 - Fish \n 3 - Soup \n Wich one would you like to buy? ( 1 / 2 / 3 ) - ");
                                 answer_food_nr = sc.nextInt();

@@ -103,7 +103,7 @@ public class Metode {
         return my_Pets;
     }
 
-    public static void DayConsole(int day) {
+    public static void DayConsole(int day) throws InterruptedException {
         System.out.println("----------------------------------------------------------");
         System.out.println("Day nr'" + day);
         System.out.print("Start simulating");
@@ -114,6 +114,7 @@ public class Metode {
         }
         System.out.print("\n\n");
     }
+
     /*
     public static void (Pet my_Pets){
         for (int i = 0; i < pets; ++i) {
